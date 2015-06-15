@@ -3,6 +3,8 @@
 <head>
 	<title>demo</title>
 	<link rel="stylesheet" type="text/css" href="css/ng-cells.css">	
+	<link rel="stylesheet" type="text/css" href="css/sheet.css">
+
 	<script type="text/javascript" src="js/angular-1.3.15.min.js"></script>
 	<script type="text/javascript" src="js/angular-sanitize-1.2.6.js"></script>
 	<script type="text/javascript" src="js/ng-cells.min.js"></script>
@@ -15,11 +17,11 @@
 			$scope.data = [];
 
 			for (var row = 0; row < 100; row++) {
-			        var rowContent = [];
-			        for (var col = 0; col < 100; col++) {
-			            rowContent.push(row * col + col);
-			        }
-			        $scope.data.push(rowContent);
+				var rowContent = [];
+				for (var col = 0; col < 100; col++) {
+					rowContent.push(row * col + col);
+				}
+				$scope.data.push(rowContent);
 			 }
 
 		}]);
@@ -31,7 +33,11 @@
 	<div ng-app="workSheetApp">
 		<div ng-controller="SheetController">
 			{{cell}}
-			 <div ngc-table data="data"></div>
+			 <div ngc-table data="data" left-column-widths="'30px'" center-column-number="20" 
+			 	center-column-widths="['40px', '60px', '40px']" right-column-widths="['60px', '40px', '60px', '40px', '60px']"
+			 	header-row-number="1" row-number='15' >
+            	<div ngc-range top="0" bottom="197" left="0" right="194"></div>
+        	</div>
 		</div>
 
 	</div>
