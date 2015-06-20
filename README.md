@@ -1,2 +1,2 @@
 # grid-cells-sheet
-Hoja de celdas.
+Grid cell in action [grid-cells-sheet](http://thomgonzalez.github.io/grid-cells-sheet/).
