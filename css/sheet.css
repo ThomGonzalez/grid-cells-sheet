@@ -1,0 +1,23 @@
+*{
+    font-family: Helvetica,serif;
+}
+.ngc.cell {
+    font-size: 10px;
+    border: 1px solid white;
+    text-align: center;
+}
+.cell-content {
+    padding: 2px;
+}
+.cell.left.header, .cell.center.header, .cell.right.header {
+    background-color: #67507F;
+    color: whitesmoke;
+}
+.cell.left.middle, .cell.center.middle, .cell.right.middle{
+     background-color: #e0f2be;
+    color: black;
+}
+.cell.left.footer, .cell.center.footer, .cell.right.footer{
+    background-color: #e0f2be;
+    color: black;
+}
